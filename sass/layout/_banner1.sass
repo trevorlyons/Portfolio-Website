@@ -1,0 +1,36 @@
+.banner
+  height: calc(100vh - 103px)
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+
+.banner1-text
+  text-align: center
+  color: $font-dark
+  font-weight: 100
+
+
+@media only screen and (min-width : 1200px)
+  .banner1-text
+    font-size: 90px
+
+@media only screen and (min-width : 992px)
+  .banner1-text
+    font-size: 70px
+
+@media only screen and (min-width : 768px)
+  .banner1-text
+    font-size: 40px
+
+@media only screen and (max-width : 576px)
+  .banner1-text
+    font-size: 30px
+
+@media only screen and (max-height : 450px)
+  .banner
+    height: 100%
+    margin-top: 30px
+
+  .banner1-text
+    font-size: 30px

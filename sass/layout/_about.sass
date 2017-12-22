@@ -1,0 +1,47 @@
+.about
+  background-color: white
+
+.title-center
+  text-align: center
+  padding: 50px 0 50px
+  color: $font-dark
+  h2
+    font-weight: 900
+
+.text-body
+  text-align: center
+  color: $font-dark
+  line-height: 2
+
+.carousel-custom
+  margin: 15px 0 0
+  padding: 30px 0 60px
+  background-color: white
+  .carousel-inner
+    width: 314px
+    display: block
+    margin: auto
+    img
+      margin: auto
+
+.carousel-img-frame
+  position: absolute
+  top: 30px
+  left: 50%
+  transform: translate(-50%, 0)
+
+.carousel-control-next,
+.carousel-control-prev
+  opacity: 0.2
+  .fa-chevron-right,
+  .fa-chevron-left
+    color: $font-light
+    font-size: 80px
+
+
+@media only screen and (max-width : 375px)
+  .carousel-custom
+    display: none
+
+  .hide-text
+    display: none
