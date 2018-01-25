@@ -187,7 +187,7 @@ p {
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
   padding-bottom: 50px;
-  font-family: 'Pacifico', cursive;
+  font-weight: 100;
 }
 
 .app-text-body {
@@ -217,17 +217,21 @@ p {
 }
 
 .cat-chat-title {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .cat-chat-body {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 100;
 }
 
 .weather-maps-top,
 .weather-maps-button {
   background-color: white;
+}
+
+.weather-maps-button {
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 360px) {
@@ -307,7 +311,7 @@ p {
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -332,12 +336,12 @@ p {
 }
 
 .btn-custom:hover {
-  background-color: #ffdf00;
+  background-color: #FFE849;
 }
 
 .btn-hire {
   border-width: thin;
-  border-color: #ffee00;
+  border-color: #FEDE00;
   background-color: white;
   font-weight: 300;
   font-size: 20px;
@@ -345,8 +349,9 @@ p {
 }
 
 .btn-hire:hover {
+  border-color: #ffee78;
   background-color: #ffee78;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (max-width: 360px) {
