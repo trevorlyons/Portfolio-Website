@@ -1,3 +1,6 @@
+*
+  -webkit-overflow-scrolling: touch
+
 html
   overflow: hidden
   height: 100%
@@ -6,7 +9,10 @@ hr
   border: 0.5px solid $font-light
 
 body
-  background-color: white
+  background-image: url('Vistabg.png')
+  background-repeat: no-repeat
+  background-clip: border-box
+  background-position: center
   width: 100%
   font-family: 'Roboto', sans-serif
   overflow: auto
@@ -17,3 +23,11 @@ p
   font-size: 18px
   font-weight: 300
   line-height: 2
+
+@media only screen and (min-width : 1400px)
+  body
+    background-size: cover
+
+@media only screen and (min-height : 1020px)
+  body
+    background-size: cover

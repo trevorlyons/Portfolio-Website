@@ -1,3 +1,7 @@
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html {
   overflow: hidden;
   height: 100%;
@@ -8,7 +12,10 @@ hr {
 }
 
 body {
-  background-color: white;
+  background-image: url("Vistabg.png");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: center;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   overflow: auto;
@@ -21,8 +28,20 @@ p {
   line-height: 2;
 }
 
+@media only screen and (min-width: 1400px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-height: 1020px) {
+  body {
+    background-size: cover;
+  }
+}
+
 .banner {
-  height: calc(100vh - 103px);
+  height: calc(100vh - 65px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,8 +50,8 @@ p {
 
 .banner1-text {
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -70,13 +89,13 @@ p {
 }
 
 .process {
-  background: linear-gradient(#fff, #FFF6B7);
+  background-color: #30334C;
 }
 
 .process-title-center {
   text-align: center;
   padding: 50px 0 50px;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   display: block;
   margin: auto;
 }
@@ -87,7 +106,7 @@ p {
 
 .process-category {
   padding: 0 50px 20px 50px;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .process-category .row {
@@ -104,6 +123,18 @@ p {
 
 .process-category .process-image img {
   height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .process {
+    padding: 0 100px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 750px) {
+  .process {
+    padding: 0 80px 0 80px;
+  }
 }
 
 .about {
@@ -171,12 +202,16 @@ p {
   }
 }
 
+.app-header-bg {
+  background-color: #333434;
+}
+
 .app-header {
   padding: 50px 0 70px;
   display: block;
   margin: auto;
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .app-header h2 {
@@ -185,14 +220,14 @@ p {
 
 .app-title {
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   padding-bottom: 50px;
   font-weight: 100;
 }
 
 .app-text-body {
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   line-height: 2;
   margin-bottom: 30px;
 }
@@ -208,26 +243,25 @@ p {
 
 .cat-chat-top {
   padding-top: 90px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #BEA6A0;
 }
 
 .cat-chat-button {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #BEA6A0;
   padding-bottom: 40px;
 }
 
 .cat-chat-title {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .cat-chat-body {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 100;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .weather-maps-top,
 .weather-maps-button {
-  background-color: white;
+  background-color: #333434;
 }
 
 .weather-maps-button {
@@ -241,13 +275,13 @@ p {
 }
 
 .contact {
-  background-color: #FFF6B7;
+  background-color: #30334C;
 }
 
 .contact .row {
   display: flex;
   justify-content: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .contact .row h2 {
@@ -267,10 +301,11 @@ p {
 
 .footer {
   width: 100%;
+  background-color: #252525;
 }
 
 .footer-title {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   margin: 70px 0 0;
   text-align: center;
 }
@@ -294,24 +329,29 @@ p {
   color: white;
 }
 
-.navbar-custom {
-  background-color: #fff;
+.navigation {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.py-4 {
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Pacifico', cursive;
   font-size: 30px;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-text:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -319,7 +359,7 @@ p {
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 
 .navbar-collapse {
@@ -328,7 +368,7 @@ p {
 
 .btn-custom {
   padding: 20px 40px 20px;
-  background-color: #ffee78;
+  background-color: rgba(255, 238, 120, 0.7);
   border-radius: 45px;
   font-size: 25px;
   font-weight: 100;
@@ -336,20 +376,17 @@ p {
 }
 
 .btn-custom:hover {
-  background-color: #FFE849;
+  background-color: #ffee78;
 }
 
 .btn-hire {
-  border-width: thin;
-  border-color: #FEDE00;
-  background-color: white;
+  background-color: rgba(255, 238, 120, 0.7);
   font-weight: 300;
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-hire:hover {
-  border-color: #ffee78;
   background-color: #ffee78;
   color: rgba(0, 0, 0, 0.7);
 }

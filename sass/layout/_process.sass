@@ -1,11 +1,10 @@
 .process
-  background: linear-gradient(#fff, #FFF6B7)
-  // background-color: #FFF6B7
+  background-color: #30334C
 
 .process-title-center
   text-align: center
   padding: 50px 0 50px
-  color: $font-dark
+  color: #fff
   display: block
   margin: auto
   h2
@@ -13,7 +12,7 @@
 
 .process-category
   padding: 0 50px 20px 50px
-  color: $font-dark
+  color: #fff
   .row
     display: flex
     justify-content: center
@@ -24,3 +23,11 @@
     align-items: center
     img
       height: auto
+
+@media only screen and (min-width : 1200px)
+  .process
+    padding: 0 100px 0 100px
+
+@media only screen and (min-width : 576px) and (max-width : 750px)
+  .process
+    padding: 0 80px 0 80px
