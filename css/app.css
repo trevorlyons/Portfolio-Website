@@ -12,7 +12,7 @@ hr {
 }
 
 body {
-  background-image: url("Vistabg.png");
+  background-image: url("../assets/Vistabg2.png");
   background-repeat: no-repeat;
   background-clip: border-box;
   background-position: center;
@@ -24,7 +24,7 @@ body {
 
 p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2;
 }
 
@@ -41,7 +41,7 @@ p {
 }
 
 .banner {
-  height: calc(100vh - 65px);
+  height: calc(100vh - 55px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,8 +50,13 @@ p {
 
 .banner1-text {
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 600;
+}
+
+.btn-app-store {
+  text-align: center;
+  margin: 70px 0 40px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -202,8 +207,8 @@ p {
   }
 }
 
-.app-header-bg {
-  background-color: #333434;
+.apps {
+  background-color: #DFDFDF;
 }
 
 .app-header {
@@ -211,67 +216,49 @@ p {
   display: block;
   margin: auto;
   text-align: center;
-  color: #fff;
+  color: #323232;
 }
 
 .app-header h2 {
-  font-weight: 900;
+  font-weight: 700;
 }
 
-.app-title {
-  text-align: center;
-  color: #fff;
-  padding-bottom: 50px;
-  font-weight: 100;
-}
-
-.app-text-body {
-  text-align: center;
-  color: #fff;
-  line-height: 2;
-  margin-bottom: 30px;
-}
-
-.app-img {
-  text-align: center;
-}
-
-.btn-app-store {
-  text-align: center;
-  margin: 70px 0 40px;
-}
-
-.cat-chat-top {
-  padding-top: 90px;
-  background-color: #BEA6A0;
-}
-
-.cat-chat-button {
-  background-color: #BEA6A0;
-  padding-bottom: 40px;
-}
-
-.cat-chat-title {
+.app-section {
   color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
 }
 
-.cat-chat-body {
-  color: rgba(0, 0, 0, 0.7);
+.app-section .row {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px 20px;
+  text-align: center;
 }
 
-.weather-maps-top,
-.weather-maps-button {
-  background-color: #333434;
+.app-section .app-image {
+  align-items: center;
+  height: 100px;
+  background-color: #24346C;
 }
 
-.weather-maps-button {
-  padding-bottom: 30px;
+.app-section .app-image img {
+  height: auto;
 }
 
-@media only screen and (max-width: 360px) {
-  .app-img img {
-    width: 100%;
-  }
+.app-section .catchat {
+  background-color: #C1FDE1;
+}
+
+.app-section .app-body {
+  background-color: #fff;
+  height: 375px;
+}
+
+.app-card {
+  width: 320px;
+  border-bottom-width: thick;
 }
 
 .contact {
@@ -342,7 +329,7 @@ p {
 .navbar-custom .navbar-text {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Pacifico', cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .navbar-custom .navbar-brand:hover,
